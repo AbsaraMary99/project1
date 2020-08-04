@@ -1,0 +1,54 @@
+import java.util.*;
+public class Calculator{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("1.Addition,2.Subtraction,3.Multiplication,4.Division,5.Modulo division");
+        System.out.println("enter your choice:");
+        int n=sc.nextInt();
+        switch(n){
+            case 1:
+                System.out.println("enter first number");
+                int a=sc.nextInt();
+                System.out.println("enter second number");
+                int b=sc.nextInt();
+                int add=a+b;
+                System.out.println("Addition of" + a + "and" + b + "is" + add);
+                break;
+            case 2:
+                System.out.println("enter first number");
+                int c=sc.nextInt();
+                System.out.println("enter second number");
+                int d=sc.nextInt();
+                int sub=c-d;
+                System.out.println("Subtraction of" + c + "and" + d + "is" + sub);
+                break;
+            case 3:
+                System.out.println("enter first number");
+                int e=sc.nextInt();
+                System.out.println("enter second number");
+                int f=sc.nextInt();
+                int multi=e*f;
+                System.out.println("Multiplication of" + e + "and" + f + "is" + multi);
+                break;
+            case 4:
+                System.out.println("enter first number");
+                int g=sc.nextInt();
+                System.out.println("enter second number");
+                int h=sc.nextInt();
+                int div=g/h;
+                System.out.println("Division of" + g + "and" + h + "is" + div);
+                break;
+            case 5:
+                System.out.println("enter first number");
+                int i=sc.nextInt();
+                System.out.println("enter second number");
+                int j=sc.nextInt();
+                int mod=i%j;
+                System.out.println(" Modulo division of" + i + "and" + j + "is" + mod);
+                break;
+            default:
+                System.out.println("invalid entry");
+                break;
+        }
+    }
+}
